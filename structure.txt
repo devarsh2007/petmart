@@ -1,0 +1,19 @@
+store-for-pets/
+│
+├── index.html               → Homepage
+├── accessories.html         ->food,leash
+├── categories.html          → dog,cat,fish,bird
+├── product-details.html     → Single product preview
+├── cart.html                → Cart simulation page
+|── checkout.html
+├── about.html               → About Us page ✅
+├── cntact us.
+│
+├── css/
+│   └── style.css            → Custom styles
+├── js/
+│   └── script.js            → Cart & dynamic features
+├── img/
+│   └── (images go here)
+
+https://picsum.photos/300

@@ -1,0 +1,110 @@
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
+#popular_pets{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#popular_heading{
+    border: 2px solid black;
+    padding: 10px;
+    width: 82%;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#popular_heading:hover{
+    background-color: black;
+    color: yellow;
+
+}
+#popular_pets .card{
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 1s;
+
+} 
+#popular_pets .card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#members h4:hover{
+    color:rgb(4, 4, 170);
+}
+
+
+.theme-card {
+      background-color: #fffbea;
+      border: 2px solid #ffc107;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .theme-card .card-body {
+      background-color: #fffbe0;
+      color: #222;
+    }
+    .theme-card .card-title {
+      font-weight: bold;
+      color: #000;
+    }
+    .theme-card .price {
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .btn-theme {
+      background-color: #000;
+      color: #ffc107;
+      border: none;
+    }
+    .btn-theme:hover {
+      background-color: #333;
+      color: #ffc107;
+    }
+    .veg-dot {
+      color: green;
+      font-size: 1.2rem;
+      margin-left: 8px;
+    }
+    .food-section {
+      display: none;
+    }
+
+  .animate-box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .animate-box.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .contact-header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+    }
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-control::placeholder {
+      font-style: italic;
+    }

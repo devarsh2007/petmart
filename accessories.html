@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <div class="container-fluid text-bg-dark sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./media/Screenshot_2025-06-12_094844-removebg-preview.png" alt="" class="img-fluid" width="180px">
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="accessories.html" class="nav-link">Accessories</a></li>
+                    <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="sign_up.html" class="nav-link">Sign Up</a></li>
+                </ul>
+                <!-- Search Bar -->
+                <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+        <div class="container mt-4 ">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="fw-bold">Select Pet Type For Food</h2>
+                    <select id="petType" class=" form-select w-25"
+                        onchange="showFood()">
+                        <option value="default">-- Choose Pet --</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="fish">Fish</option>
+                        <option value="bird">Bird</option>
+                    </select>
+
+                    <br>
+                    <!-- Food Sections -->
+                    <div id="dog" class="food-section">
+                        <h3>Dog Food</h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=1"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Dog Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Delicious
+                                                    chicken & rice blend,
+                                                    healthy and tasty for all
+                                                    breeds.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cat" class="food-section">
+                        <div class="row">
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=2"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Cat Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                    <!-- Veg Icon -->
+                                                </h5>
+                                                <p class="card-text mb-2">Tasty
+                                                    tuna & salmon meal for adult
+                                                    and kitten cats.</p>
+                                                <p
+                                                    class="card-text price">₹199</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                        </div>
+                    </div>
+
+                    <div id="fish" class="food-section">
+                        <div class="row">
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=3"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Fish Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Fish Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p
+                                                    class="card-text mb-2">Nutritious
+                                                    flakes and pellets for
+                                                    vibrant & healthy aquarium
+                                                    fish.</p>
+                                                <p
+                                                    class="card-text price">₹149</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bird" class="food-section">
+                        <div class="row">
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"><div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=4"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Bird Food">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title d-flex justify-content-between align-items-center">
+                                                    Bird Food
+                                                    <span
+                                                        class="veg-dot">&#x25CF;</span>
+                                                </h5>
+                                                <p class="card-text mb-2">Seed
+                                                    mix and fruit blend for
+                                                    parrots, budgies, and
+                                                    finches.</p>
+                                                <p
+                                                    class="card-text price">₹129</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+        <div class="container mt-4 ">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="fw-bold">Select Pet Type For Leash</h2>
+                    <select id="leashType" class="form-select w-25"
+                        onchange="showLeash()">
+
+                        <option value>-- Choose Pet --</option>
+                        <option value="dog2">Dog</option>
+                        <option value="cat2">Cat</option>
+
+                    </select>
+
+                    <br>
+                    <!-- Food Sections -->
+                    <div id="dog2" class="leash-section" style="display:none;">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=5"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Heavy
+                                                    Duty
+                                                    Dog Leash</h5>
+                                                <p
+                                                    class="card-text mb-2">Durable
+                                                    nylon leash with comfortable
+                                                    grip, ideal for walks and
+                                                    training.</p>
+                                                <p
+                                                    class="card-text price">₹299</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme"><i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=5"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Heavy
+                                                    Duty
+                                                    Dog Leash</h5>
+                                                <p
+                                                    class="card-text mb-2">Durable
+                                                    nylon leash with comfortable
+                                                    grip, ideal for walks and
+                                                    training.</p>
+                                                <p
+                                                    class="card-text price">₹299</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme"><i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=5"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Heavy
+                                                    Duty
+                                                    Dog Leash</h5>
+                                                <p
+                                                    class="card-text mb-2">Durable
+                                                    nylon leash with comfortable
+                                                    grip, ideal for walks and
+                                                    training.</p>
+                                                <p
+                                                    class="card-text price">₹299</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme"><i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=5"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Heavy
+                                                    Duty
+                                                    Dog Leash</h5>
+                                                <p
+                                                    class="card-text mb-2">Durable
+                                                    nylon leash with comfortable
+                                                    grip, ideal for walks and
+                                                    training.</p>
+                                                <p
+                                                    class="card-text price">₹299</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme"><i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=5"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Dog Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Heavy
+                                                    Duty
+                                                    Dog Leash</h5>
+                                                <p
+                                                    class="card-text mb-2">Durable
+                                                    nylon leash with comfortable
+                                                    grip, ideal for walks and
+                                                    training.</p>
+                                                <p
+                                                    class="card-text price">₹299</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme"><i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="cat2" class="leash-section" style="display:none;">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=12"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title">Adjustable
+                                                    Cat Harness & Leash</h5>
+                                                <p class="card-text mb-2">Soft,
+                                                    breathable mesh harness with
+                                                    escape-proof buckle. Ideal
+                                                    for safe outdoor
+                                                    adventures.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=12"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title">Adjustable
+                                                    Cat Harness & Leash</h5>
+                                                <p class="card-text mb-2">Soft,
+                                                    breathable mesh harness with
+                                                    escape-proof buckle. Ideal
+                                                    for safe outdoor
+                                                    adventures.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=12"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title">Adjustable
+                                                    Cat Harness & Leash</h5>
+                                                <p class="card-text mb-2">Soft,
+                                                    breathable mesh harness with
+                                                    escape-proof buckle. Ideal
+                                                    for safe outdoor
+                                                    adventures.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=12"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title">Adjustable
+                                                    Cat Harness & Leash</h5>
+                                                <p class="card-text mb-2">Soft,
+                                                    breathable mesh harness with
+                                                    escape-proof buckle. Ideal
+                                                    for safe outdoor
+                                                    adventures.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card mb-3 theme-card"
+                                    style="max-width: 600px;">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img
+                                                src="https://picsum.photos/300?random=12"
+                                                class="img-fluid rounded-start h-100 object-fit-cover"
+                                                alt="Cat Leash">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5
+                                                    class="card-title">Adjustable
+                                                    Cat Harness & Leash</h5>
+                                                <p class="card-text mb-2">Soft,
+                                                    breathable mesh harness with
+                                                    escape-proof buckle. Ideal
+                                                    for safe outdoor
+                                                    adventures.</p>
+                                                <p
+                                                    class="card-text price">₹249</p>
+                                                <button
+                                                    class="btn btn-sm btn-theme">
+                                                    <i
+                                                        class="bi bi-plus-lg"></i>
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Paste cat leash cards here -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class=" container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12">
+                    <footer class="text-center py-4  text-white">
+                        &copy; 2025 Store for Pets. All rights reserved.
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+        <script>
+   function showFood() {
+      const selected = document.getElementById("petType").value;
+      const sections = document.querySelectorAll(".food-section");
+
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+
+      if (selected) {
+        document.getElementById(selected).style.display = "block";
+      }
+    }
+
+  function showLeash() {
+    const selected = document.getElementById("leashType").value;
+    const sections = document.querySelectorAll(".leash-section");
+
+    sections.forEach(section => {
+      section.style.display = "none";
+    });
+
+    if (selected) {
+      document.getElementById(selected).style.display = "block";
+    }
+  }
+</script>
+
+    </body>
+</html>
